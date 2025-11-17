@@ -1,0 +1,8 @@
+git init - uus repo
+git config --global user.name settib nime
+git config --global user.email settib emaili
+git config --global --list
+
+//
+
+ssh-keygen -o -t rsa -C "[email]"
