@@ -15,5 +15,8 @@
         <li>
             <a href="https://kaurpakaste24.thkit.ee/" target="_blank">Vana koduleht</a>
         </li>
+        <li>
+            <a href="?leht=gitKasud.php">GIT Käsud</a>
+        </li>
     </ul>
 </nav>
