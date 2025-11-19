@@ -18,7 +18,11 @@ include("header.php");
 // navigeerimismenüü
 include("nav.php");
 ?>
+
 <div class="flex-container">
+    <div class="aside">
+        PHP - (rekursiivne lühend sõnadest PHP: Hypertext Preprocessor) on laialdaselt kasutatav avatud lähtekoodiga üldotstarbeline skriptimiskeel, mis sobib eriti hästi veebiarenduseks ja mida saab HTML-i manustada.
+    </div>
     <div>
         <?php
         // sisu - laetakse content kaustast
@@ -29,10 +33,7 @@ include("nav.php");
         }
         ?>
     </div>
-    <div>
-        PHP - (rekursiivne lühend sõnadest PHP: Hypertext Preprocessor) on laialdaselt kasutatav avatud lähtekoodiga üldotstarbeline skriptimiskeel, mis sobib eriti hästi veebiarenduseks ja mida saab HTML-i manustada.
-    </div>
-    <div>
+    <div class="aside">
         <img src="image/phpPilt.png" alt="PHP pilt">
     </div>
 </div>

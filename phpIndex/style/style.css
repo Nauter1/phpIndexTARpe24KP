@@ -41,6 +41,25 @@ div.flex-container > div {
     padding: 10px;
     flex: 1;
 }
+div.flex-container > div.aside {
+    margin: 10px;
+    border: solid black 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0.1;
+}
+
+div.ajafunktsioonid {
+    display: flex;
+    flex-direction: row;
+}
+div.ajafunktsioonid > div {
+    margin: 10px;
+    border: solid black 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
 
 /* Use media query and show the flex items vertically if screen width is less than 600px */
 @media screen and (max-width:600px) {
