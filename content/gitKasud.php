@@ -1,7 +1,7 @@
 <?php
 echo "<h2>GIT CMD käsud</h2>";
 echo "<ul>";
-echo "<li>git init uus repo</li>";
+echo "<li>git init uus repo</li><br>";
 echo '<li> git init - uus repo
 git config --global user.name "[nimi]"
 <br>

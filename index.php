@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kaur PHP Tööde leht</title>
     <link rel="stylesheet" href="style/style.css">
     <script src="js/joonisScript.js"></script>
     <script src="js/kalkulaatorScript.js"></script>
