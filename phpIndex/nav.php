@@ -18,5 +18,8 @@
         <li>
             <a href="?leht=gitKasud.php">GIT Käsud</a>
         </li>
+        <li>
+            <a href="?leht=tekstfunktsioonid.php">Tekstfunktsioonid</a>
+        </li>
     </ul>
 </nav>
