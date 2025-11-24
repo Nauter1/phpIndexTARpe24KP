@@ -1,2 +1,3 @@
 # phpIndexTARpe24KP
-phpTööd
+kaurpakaste24.thkit.ee
+phpLeht - https://kaurpakaste24.thkit.ee/phpIndex/index.php
