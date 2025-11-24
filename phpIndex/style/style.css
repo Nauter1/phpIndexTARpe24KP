@@ -2,25 +2,24 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #0068ff;
 }
 
-ul li {
-    float: left;
-}
+    ul li {
+        float: left;
+    }
 
-ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-ul li a:hover {
-    background-color: #111111;
-}
+            ul li a:hover {
+                background-color: #111111;
+            }
 
 header {
     background-color: #f1f1f1;
@@ -34,32 +33,34 @@ div.flex-container {
     flex-direction: row;
 }
 
-div.flex-container > div {
-    margin: 10px;
-    border: solid black 1pt;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 1;
-}
-div.flex-container > div.aside {
-    margin: 10px;
-    border: solid black 1pt;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0.1;
-}
+    div.flex-container > div {
+        margin: 10px;
+        border: solid black 1pt;
+        border-radius: 10px;
+        padding: 10px;
+        flex: 1;
+    }
+
+        div.flex-container > div.aside {
+            margin: 10px;
+            border: solid black 1pt;
+            border-radius: 10px;
+            padding: 10px;
+            flex: 0.1;
+        }
 
 div.ajafunktsioonid {
     display: flex;
     flex-direction: row;
 }
-div.ajafunktsioonid > div {
-    margin: 10px;
-    border: solid black 1pt;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 1;
-}
+
+    div.ajafunktsioonid > div {
+        margin: 10px;
+        border: solid black 1pt;
+        border-radius: 10px;
+        padding: 10px;
+        flex: 1;
+    }
 
 /* Use media query and show the flex items vertically if screen width is less than 600px */
 @media screen and (max-width:600px) {
@@ -74,63 +75,63 @@ footer {
     padding: 8px;
 }
 
-div#correct{
-    color:#00ff00;
+div#correct {
+    color: #00ff00;
 }
 
-div#incorrect{
-    color:#ff0000;
+div#incorrect {
+    color: #ff0000;
 }
 
-.menu, .menu ul{
+.menu, .menu ul {
     line-height: 1;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.menu{
+.menu {
     display: block;
     position: relative;
     height: 47px;
     width: 100%;
-    background: #ffffff;
+    background: #276ff5;
     top: 10px;
 }
 
-.menu ul>li {
-    display: block;
-    position: relative;
-    float: left;
-}
+    .menu ul > li {
+        display: block;
+        position: relative;
+        float: left;
+    }
 
-.menu li>a{
-    display: block;
-    color: #000000;
-    padding: 16px;
-    width: 130px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
+    .menu li > a {
+        display: block;
+        color: #000000;
+        padding: 16px;
+        width: 130px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        transition: all 0.5s ease;
+    }
 
-    transition: all 0.5s ease;
-}
+    .menu li:hover > a {
+        background: #154194;
+        color: #ffffff;
+    }
 
-.menu li:hover>a{
-    background: #555555;
-    color: #ffffff;
-}
-
-.dropdown{
+.dropdown {
     /*  display: none;*/
     display: block;
     position: absolute;
-    background: #cccccc;
-
+    background: #0F2D66;
+    opacity: 0;
     transition: all 0.3s ease;
 }
 
-.menu li:hover>ul{
+.menu li:hover > ul {
     top: 47px;
     left: 0;
+    opacity: 1;
 }

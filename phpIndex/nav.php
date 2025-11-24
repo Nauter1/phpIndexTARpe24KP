@@ -16,15 +16,6 @@
             <li>
                 <a href="?leht=gitKasud.php">GIT Käsud</a>
             </li>
-            <li>
-                <a href="?leht=tekstfunktsioonid.php">Tekstfunktsioonid</a>
-            </li>
-            <li>
-                <a href="?leht=matemaatilised.php">Matem. Funktsioonid</a>
-            </li>
-            <li>
-                <a href="?leht=ajafunktsioonid.php">Ajafunktsioonid</a>
-            </li>
             <li><a href="#">Funktsioonid</a>
                 <ul class="dropdown">
                     <li>
@@ -40,3 +31,4 @@
             </li>
         </ul>
     </nav>
+    <br>
