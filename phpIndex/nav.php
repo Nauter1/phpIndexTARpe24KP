@@ -21,5 +21,8 @@
         <li>
             <a href="?leht=tekstfunktsioonid.php">Tekstfunktsioonid</a>
         </li>
+        <li>
+            <a href="?leht=matemaatilised.php">Matem. Funktsioonid</a>
+        </li>
     </ul>
 </nav>
