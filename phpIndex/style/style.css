@@ -73,3 +73,11 @@ footer {
     text-align: center;
     padding: 8px;
 }
+
+div#correct{
+    color:#00ff00;
+}
+
+div#incorrect{
+    color:#ff0000;
+}
