@@ -234,7 +234,7 @@ function franceLipp(){
 function canadaLipp(){
     const lipp=document.getElementById("lipp")
     const fail=new Image();
-    fail.src="image/Flag_of_Canada_(leaf).png";
+    fail.src="image/CanadaLipp.png";
     if(lipp.getContext){
         let l = lipp.getContext("2d")
         l.fillStyle="red";

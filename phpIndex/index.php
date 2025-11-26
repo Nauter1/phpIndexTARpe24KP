@@ -34,7 +34,7 @@ include("nav.php");
         ?>
     </div>
     <div class="aside">
-        <img src="image/phpPilt.png" alt="PHP pilt">
+        <img src="image/phpLogo.png" alt="PHP pilt">
     </div>
 </div>
 
