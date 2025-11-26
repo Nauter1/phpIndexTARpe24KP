@@ -135,3 +135,20 @@ div#incorrect {
     left: 0;
     opacity: 1;
 }
+
+div.Gallery_Container {
+    display: flex;
+    /* Show the flex items horizontally */
+    flex-direction: row;
+    width: 250px;
+
+}
+
+div.Gallery_Container > div {
+    margin: 10px;
+    border: solid #0F2D66 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+
+}
