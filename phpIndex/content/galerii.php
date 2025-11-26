@@ -26,7 +26,7 @@ $pildi_andmed = getimagesize($pildi_aadress);
 $laius = $pildi_andmed[0];
 $korgus = $pildi_andmed[1];
 $formaat = $pildi_andmed[2];
-$max_laius = 120;
+$max_laius = 200;
 $max_korgus = 90;
 
 //suhtearvu leidmine
@@ -51,5 +51,11 @@ echo '<h3>Uue pildi andmed</h3>';
 echo "Arvutamse suhe: $ratio <br>";
 echo "Laius: $pisi_laius<br>";
 echo "Kõrgus: $pisi_korgus<br>";
-echo "<img width='$pisi_laius' src='$pildi_aadress'><br>";
+echo "<div class='Gallery_Container'>";
+echo "<div>";
+    echo "<img width='$pisi_laius' src='$pildi_aadress'><br>";
+echo "</div>";
+
+echo "</div>";
+
 }
