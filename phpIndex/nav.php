@@ -32,6 +32,9 @@
             <li>
                 <a href="?leht=galerii.php">Galerii</a>
             </li>
+            <li>
+                <a href="content/mobiilimall/esmaspaev.php" target="_blank">Mobiilimall</a>
+            </li>
         </ul>
     </nav>
     <br>
