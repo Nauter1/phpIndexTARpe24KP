@@ -1,0 +1,5 @@
+    Kaks blondiini saavad kokku. Üks ütleb teisele:
+
+    "Kuule, tegin täna rasedustesti."
+    Teine vastu:
+    "Kas olid ka rasked küsimused?"

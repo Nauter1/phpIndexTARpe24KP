@@ -35,6 +35,10 @@
             <li>
                 <a href="content/mobiilimall/esmaspaev.php" target="_blank">Mobiilimall</a>
             </li>
+
+            <li>
+                <a href="content/mobiilimall/anekdoodid/anekdoot.php">Anekdoot</a>
+            </li>
         </ul>
     </nav>
     <br>

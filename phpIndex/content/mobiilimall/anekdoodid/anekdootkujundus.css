@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-    background: #213042;
+    background: #214233;
     font-family:Arial, Helvetica, sans-serif;
     margin:0;
     padding:0;
@@ -12,7 +12,7 @@ body{
 }
 .nav{
     font-size:14px;
-    background: #004dbf;
+    background: #beffc9;
     -moz-border-bottom-left-radius:6px;
     -webkit-border-bottom-left-radius:6px;
     border-bottom-left-radius:6px;
@@ -40,7 +40,7 @@ body{
 }
 .nav ul li a{
     display:inline-block;
-    color:#f2f2f2;
+    color: #101a27;
     padding:10px;text-decoration:none;
 }
 .nav ul li a:hover{
@@ -64,15 +64,15 @@ p{
     line-height:20px;
 }
 p a{
-    color:#3c9ddb;
+    color: #47db3c;
     text-decoration:none;
 }
 p a:hover{
-    color: #418dff;
+    color: #6aff41;
 }
 .nav2{
     font-size:14px;
-    background: #0068ff;
+    background: #2fff00;
     -moz-border-top-left-radius:6px;
     -webkit-border-top-left-radius:6px;
     border-top-left-radius:6px;
@@ -80,21 +80,22 @@ p a:hover{
     -webkit-border-top-right-radius:6px;
     border-top-right-radius:6px;
     margin:0 5px;
+    position:b;
 }
 .nav2 p{
     text-align:center;
-    color:#f2f2f2;
+    color: #101a27;
     margin:0 5px;
     padding:5px 0;
 }
 .nav2 p a{
     display:inline-block;
-    color: #418dff;
+    color: #41ff44;
     padding:5px;
     text-decoration:none;
 }
 .nav2 p a:hover{
-    color:#565656;
+    color: #23431f;
 }
 .clear{
     clear:both;
