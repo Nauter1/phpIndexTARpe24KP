@@ -1,0 +1,28 @@
+table, td{
+    border: 1px solid black;
+    color:black;
+}
+
+h1{
+    border-radius:3px;
+    border: 2px solid crimson;
+    font-family:Consolas;
+}
+
+form{
+    border-radius:3px;
+    border: 2px solid crimson;
+    font-family:Consolas;
+    width:24%;
+    height:12%;
+    padding:2%;
+}
+
+input[type=submit]{
+    background-color:green;
+    color:white;
+}
+
+*{
+    font-family:Consolas;
+}
