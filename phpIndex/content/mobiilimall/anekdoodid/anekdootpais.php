@@ -12,7 +12,7 @@ maximum-scale=1.0;">
 <div id="header">
     <div class="nav">
         <ul>
-            <li><a href="../esmaspaev.php">Tagasi</a></li>
+            <li><a href="../../../index.php">Tagasi</a></li>
             <li><a href="anekdoot.php">Pealeht</a></li>
             <li><a href="anekdootA.php">Josephi Tsitaat</a></li>
             <li><a href="anekdootB.php">Pinali nali</a></li>

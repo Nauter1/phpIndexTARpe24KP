@@ -107,13 +107,13 @@ div#incorrect {
 
     .menu li > a {
         display: block;
-        color: #000000;
         padding: 16px;
         width: 130px;
         text-align: center;
         font-size: 15px;
         font-weight: 300;
         transition: all 0.5s ease;
+        color: #add8e6
     }
 
     .menu li:hover > a {

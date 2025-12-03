@@ -32,12 +32,21 @@
             <li>
                 <a href="?leht=galerii.php">Galerii</a>
             </li>
-            <li>
-                <a href="content/mobiilimall/esmaspaev.php" target="_blank">Mobiilimall</a>
+            <li><a href="#">Mobiilimall</a>
+                <ul class="dropdown">
+                    <li>
+                        <a href="content/mobiilimall/esmaspaev.php" target="_blank">Näide</a>
+                    </li>
+                    <li>
+                        <a href="content/mobiilimall/anekdoodid/anekdoot.php" target="_blank">Anekdoot</a>
+                    </li>
+                    <li>
+                        <a href="?leht=mobillimalliKonspekt.php">Konspekt</a>
+                    </li>
+                </ul>
             </li>
-
             <li>
-                <a href="content/mobiilimall/anekdoodid/anekdoot.php">Anekdoot</a>
+                <a href="content/andmebaasLoomad/loomadeKuvamine.php" target="_blank">Loomade AB</a>
             </li>
         </ul>
     </nav>
