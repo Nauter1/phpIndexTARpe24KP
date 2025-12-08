@@ -1,0 +1,171 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00ff6f;
+}
+
+ul li {
+    float: left;
+}
+
+
+
+
+header {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+div.flex-container {
+    display: flex;
+    /* Show the flex items horizontally */
+    flex-direction: row;
+}
+
+div.flex-container > div {
+    margin: 10px;
+    border: solid black 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+div.flex-container > div.aside {
+    margin: 10px;
+    border: solid black 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0.1;
+}
+
+div.ajafunktsioonid {
+    display: flex;
+    flex-direction: row;
+}
+
+div.ajafunktsioonid > div {
+    margin: 10px;
+    border: solid black 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+    div.flex-container {
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 8px;
+}
+
+div#correct {
+    color: #00ff00;
+}
+
+div#incorrect {
+    color: #ff0000;
+}
+
+.menu, .menu ul {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu {
+    display: block;
+    position: relative;
+    height: 47px;
+    width: 100%;
+    background: #27f557;
+    top: 10px;
+}
+
+.menu ul > li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.menu li > a {
+    display: block;
+    padding: 16px;
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+    color: #102719
+}
+
+.menu li:hover > a {
+    background: #15945b;
+    color: #ffffff;
+}
+
+.dropdown {
+    /*  display: none;*/
+    display: block;
+    position: absolute;
+    background: #0f664f;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu li:hover > ul {
+    top: 47px;
+    left: 0;
+    opacity: 1;
+}
+
+div.Gallery_Container {
+    display: flex;
+    /* Show the flex items horizontally */
+    flex-direction: row;
+    width: 250px;
+
+}
+
+div.Gallery_Container > div {
+    margin: 10px;
+    border: solid #0f6659 1pt;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+
+}
+
+table{
+    border: 1px solid black;
+    color:black;
+}
+
+td{
+    border: 1px solid black;
+    width:30%;
+    height:30%;
+}
+
+
+
+input[type=submit]{
+    background-color:green;
+    color:white;
+}
+
+#menyykiht > li {
+    color:black;
+}
+
+*{
+    font-family:"Tempus Sans ITC";
+}
