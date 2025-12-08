@@ -21,6 +21,9 @@
         <li>
             <a href="firmaadmin.php">Admin Andmebaas</a>
         </li>
+        <li>
+            <a href="firmagalerii.php">Galerii</a>
+        </li>
     </ul>
 </nav>
 <br>

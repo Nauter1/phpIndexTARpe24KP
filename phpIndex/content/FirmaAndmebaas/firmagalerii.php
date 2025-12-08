@@ -38,14 +38,10 @@
         //tabelist kustutamine
         global $yhendus;
         ?>
-        <h1>Lille Tabel</h1>
+        <h1>Lille Galerii</h1>
         <table>
             <tr>
-                <td>Nimetus</td>
-                <td>Kirjeldus</td>
                 <td>Pilt</td>
-                <td>Hind</td>
-                <td>Kogus</td>
             </tr>
 
             <?php
@@ -55,11 +51,7 @@
 
             while($kask->fetch()){
                 echo "<tr>";
-                echo "<td>".$nimi."</td>";
-                echo "<td>".$sisu."</td>";
-                echo "<td><img src='$pilt' width='300' height='300'></td>";
-                echo "<td>".$hind."</td>";
-                echo "<td>".$kogus."</td>";
+                echo "<td><img src='$pilt' width='400' height='400'></td>";
                 echo "</tr>";
             }
             ?>
@@ -79,4 +71,3 @@
 </footer>
 </body>
 </html>
-

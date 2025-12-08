@@ -35,6 +35,9 @@
         <li>
             <a href="firmaadmin.php">Admin Andmebaas</a>
         </li>
+        <li>
+            <a href="firmagalerii.php">Galerii</a>
+        </li>
     </ul>
 </nav>
 <br>
@@ -119,12 +122,12 @@
                      <input type='hidden' name='muutmisid' value='$id'/>
                      <h2>Lille muutmine</h2>
                      <dl>
-                       <dt>Nimi:</dt>
+                       <dt>Nimetus:</dt>
                        <dd>
                          <input type='text' name='nimi' value='".
                             htmlspecialchars($nimi)."'/>
                        </dd>
-                       <dt>Lille sisu:</dt>
+                       <dt>Lille Kirjeldus:</dt>
                        <dd>
                          <textarea rows='20' cols='30' name='sisu'>".
                             htmlspecialchars($sisu)."</textarea>
@@ -176,11 +179,11 @@
                     <input type="hidden" name="uusleht" value="jah" />
                     <h2>Uue teate lisamine</h2>
                     <dl>
-                        <dt><label for="nimi">Nimi:</label></dt>
+                        <dt><label for="nimi">Nimetus:</label></dt>
                         <dd>
                             <input type="text" name="nimi" id="nimi" />
                         </dd>
-                        <dt><label for="sisu">Sisu:</label></dt>
+                        <dt><label for="sisu">Kirjeldus:</label></dt>
                         <dd>
                             <textarea rows="20" cols="30" name="sisu" id="sisu"></textarea>
                         </dd>
