@@ -1,3 +1,4 @@
+<?php if (isset($_GET['code'])) {die(highlight_file(__FILE__,1));} ?>
 <?php
 require('conf.php');
 
