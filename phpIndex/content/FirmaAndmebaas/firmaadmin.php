@@ -1,24 +1,50 @@
 <?php if (isset($_GET['code'])) {die(highlight_file(__FILE__,1));} ?>
+<?php
+require('conf.php');
+
+global $yhendus;
+
+// Uue teate lisamine
+if (isset($_REQUEST["uusleht"])) {
+    if($_REQUEST["uusleht"]!==0){
+        $kask = $yhendus->prepare("INSERT INTO lilled (nimi, sisu,pilt,hind,kogus) VALUES (?, ?, ?, ?,?)");
+        $kask->bind_param("ssssi", $_REQUEST["nimi"], $_REQUEST["sisu"], $_REQUEST["pilt"],$_REQUEST["hind"],$_REQUEST["kogus"]);
+        $kask->execute();
+        header("Location: ".$_SERVER["PHP_SELF"]);
+        $yhendus->close();
+        exit();
+    }
+
+}
+
+// Teate kustutamine
+if (isset($_REQUEST["kustutusid"])) {
+    $kask = $yhendus->prepare("DELETE FROM lilled WHERE id=?");
+    $kask->bind_param("i", $_REQUEST["kustutusid"]);
+    $kask->execute();
+}
+
+// Teate muutmine
+if (isset($_REQUEST["muutmisid"])) {
+    $kask = $yhendus->prepare("UPDATE lilled SET nimi=?, sisu=?,pilt=?,hind=?,kogus=? WHERE id=?");
+    $kask->bind_param(
+        "ssssii",
+        $_REQUEST["nimi"],
+        $_REQUEST["sisu"],
+        $_REQUEST["pilt"],
+        $_REQUEST["hind"],
+        $_REQUEST["kogus"],
+        $_REQUEST["muutmisid"]
+    );
+    $kask->execute();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaur PHP Tööde leht</title>
+    <title>Lillepoe Admin leht</title>
     <link rel="stylesheet" href="firmastyle.css">
-    <style>
-        #menyykiht {
-            float: left;
-            padding-right: 30px;
-        }
-        #menyykiht>li{
-            background-color:black;
-            border: lime 3px solid;
-            color:white;
-        }
-        #sisukiht {
-            float: left;
-        }
-    </style>
 </head>
 <body>
 <header>
@@ -48,46 +74,6 @@
         Tere tulemast Kauri Lillepoodi, kus meie müüme igasuguseid lille odavalt!
     </div>
     <div>
-        <?php
-        require('conf.php');
-
-        global $yhendus;
-
-        // Uue teate lisamine
-        if (isset($_REQUEST["uusleht"])) {
-            if($_REQUEST["uusleht"]!==0){
-                $kask = $yhendus->prepare("INSERT INTO lilled (nimi, sisu,pilt,hind,kogus) VALUES (?, ?, ?, ?,?)");
-                $kask->bind_param("ssssi", $_REQUEST["nimi"], $_REQUEST["sisu"], $_REQUEST["pilt"],$_REQUEST["hind"],$_REQUEST["kogus"]);
-                $kask->execute();
-                header("Location: ".$_SERVER["PHP_SELF"]);
-                $yhendus->close();
-                exit();
-            }
-
-        }
-
-        // Teate kustutamine
-        if (isset($_REQUEST["kustutusid"])) {
-            $kask = $yhendus->prepare("DELETE FROM lilled WHERE id=?");
-            $kask->bind_param("i", $_REQUEST["kustutusid"]);
-            $kask->execute();
-        }
-
-        // Teate muutmine
-        if (isset($_REQUEST["muutmisid"])) {
-            $kask = $yhendus->prepare("UPDATE lilled SET nimi=?, sisu=?,pilt=?,hind=?,kogus=? WHERE id=?");
-            $kask->bind_param(
-                "ssssii",
-                $_REQUEST["nimi"],
-                $_REQUEST["sisu"],
-                $_REQUEST["pilt"],
-                $_REQUEST["hind"],
-                $_REQUEST["kogus"],
-                $_REQUEST["muutmisid"]
-            );
-            $kask->execute();
-        }
-        ?>
         <div id="menyykiht">
             <h2>Lilled</h2>
             <ul>
@@ -140,10 +126,10 @@
                        </dd>
                        <dt>Lille hind:</dt>
                        <dd>
-                         <input type='text' name='hind' value='".
+                         <input type='number' min='0.01' max='99.99' step='0.01' name='hind' value='".
                             htmlspecialchars($hind)."'/>
                        </dd>
-                       <dt>Lille hind:</dt>
+                       <dt>Lille Kogus:</dt>
                        <dd>
                          <input type='number' name='kogus' value='".
                             htmlspecialchars($kogus)."'/>
@@ -157,7 +143,7 @@
                         echo "<h2>".htmlspecialchars($nimi)."</h2>";
                         echo htmlspecialchars($sisu);
                         echo "<br>";
-                        echo "<img src='$pilt'>";
+                        echo "<img src='$pilt' width='300' height='300'>";
                         echo "<br>";
                         echo "<br>";
                         echo "Hind: ".htmlspecialchars($hind);
@@ -186,15 +172,15 @@
                         </dd>
                         <dt><label for="sisu">Kirjeldus:</label></dt>
                         <dd>
-                            <textarea rows="20" cols="30" name="sisu" id="sisu"></textarea>
+                            <textarea rows="5" cols="30" name="sisu" id="sisu"></textarea>
                         </dd>
                         <dt><label for="pilt">Pilt:</label></dt>
                         <dd>
-                            <input type="text" name="pilt" id="pilt"/>
+                            <textarea rows="5" cols="30" name="pilt" id="pilt"></textarea>
                         </dd>
                         <dt><label for="hind">Hind:</label></dt>
                         <dd>
-                            <input type="text" name="hind" id="hind"/>
+                            <input type="number" min="0.01" max="99.99" step="0.01" name="hind" id="hind"/>
                         </dd>
                         <dt><label for="kogus">Kogus:</label></dt>
                         <dd>
@@ -219,7 +205,7 @@
 
 <footer>
     <?php
-    echo "Õpilase tehtud leht &copy;";
+    echo "Kauri tehtud leht &copy;";
     echo date("Y");
     ?>
 </footer>

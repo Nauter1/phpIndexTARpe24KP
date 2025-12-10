@@ -147,12 +147,12 @@ div.Gallery_Container > div {
 table{
     border: 1px solid black;
     color:black;
+    border-collapse: collapse;
 }
 
 td{
     border: 1px solid black;
-    width:30%;
-    height:30%;
+    border-collapse: collapse;
 }
 
 
@@ -162,10 +162,31 @@ input[type=submit]{
     color:white;
 }
 
-#menyykiht > li {
-    color:black;
-}
-
 *{
     font-family:"Tempus Sans ITC";
+}
+
+#menyykiht {
+    float: left;
+    padding-right: 30px;
+}
+#menyykiht>li{
+    background-color:black;
+    border: lime 3px solid;
+    color:white;
+}
+
+#menyykiht>ul{
+    background-color:white;
+}
+
+#sisukiht {
+    float: left;
+}
+
+#jalusekiht {
+    clear: left;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
 }

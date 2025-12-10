@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaur PHP Tööde leht</title>
+    <title>Kaur Lillepoe leht</title>
     <link rel="stylesheet" href="firmastyle.css">
 </head>
 <body>
@@ -51,7 +51,7 @@
 
 <footer>
     <?php
-    echo "Õpilase tehtud leht &copy;";
+    echo "Kauri tehtud leht &copy;";
     echo date("Y");
     ?>
 </footer>

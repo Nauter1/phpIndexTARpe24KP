@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaur PHP Tööde leht</title>
+    <title>Lillepoe galerii</title>
     <link rel="stylesheet" href="firmastyle.css">
 </head>
 <body>
@@ -40,23 +40,16 @@
         global $yhendus;
         ?>
         <h1>Lille Galerii</h1>
-        <table>
-            <tr>
-                <td>Pilt</td>
-            </tr>
-
             <?php
             $kask=$yhendus->prepare("SELECT id, nimi, sisu, pilt, hind, kogus FROM lilled");
             $kask->bind_result($id, $nimi, $sisu, $pilt, $hind, $kogus);
             $kask->execute();
 
             while($kask->fetch()){
-                echo "<tr>";
-                echo "<td><img src='$pilt' width='400' height='400'></td>";
-                echo "</tr>";
+                echo "<img src='$pilt' width='400' height='400'>";
             }
             ?>
-        </table>
+
     </div>
     <div class="aside">
         <img src="https://images.pexels.com/photos/6843561/pexels-photo-6843561.jpeg" alt="Lillepilt" width="150" height="650">
@@ -66,7 +59,7 @@
 
 <footer>
     <?php
-    echo "Õpilase tehtud leht &copy;";
+    echo "Kauri tehtud leht &copy;";
     echo date("Y");
     ?>
 </footer>

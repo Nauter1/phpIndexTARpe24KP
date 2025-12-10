@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kaur PHP Tööde leht</title>
+    <title>Lillepoe Andmebaasi leht</title>
     <link rel="stylesheet" href="firmastyle.css">
 </head>
 <body>
@@ -58,7 +58,7 @@
                 echo "<tr>";
                 echo "<td>".$nimi."</td>";
                 echo "<td>".$sisu."</td>";
-                echo "<td><img src='$pilt' width='300' height='300'></td>";
+                echo "<td><img src='$pilt' width='150' height='150'></td>";
                 echo "<td>".$hind."</td>";
                 echo "<td>".$kogus."</td>";
                 echo "</tr>";
@@ -74,7 +74,7 @@
 
 <footer>
     <?php
-    echo "Õpilase tehtud leht &copy;";
+    echo "Kauri tehtud leht &copy;";
     echo date("Y");
     ?>
 </footer>

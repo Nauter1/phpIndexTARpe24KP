@@ -42,23 +42,8 @@ $kask->execute();
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <title>Teated lehel</title>
+    <title>Lillepoe leht</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <style type="text/css">
-        #menyykiht {
-            float: left;
-            padding-right: 30px;
-        }
-        #sisukiht {
-            float: left;
-        }
-        #jalusekiht {
-            clear: left;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
 </head>
 <body>
 <div id="menyykiht">
@@ -180,7 +165,10 @@ $kask->execute();
 </div>
 
 <div id="jalusekiht">
-    Lehe tegi õpilane...
+    <?php
+    echo "Kauri tehtud leht &copy;";
+    echo date("Y");
+    ?>
 </div>
 </body>
 </html>
